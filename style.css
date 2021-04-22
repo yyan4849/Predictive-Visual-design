@@ -13,30 +13,34 @@ body {
     margin:0;
     display: block;
 }
+/* Header style */
 .content-nav{
    margin: auto;
    /* width: 650px; */
    position: relative;
 
-    
-
 }
+
+header{
+    background-color: rgb(22, 45, 107);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.article-header-inner{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    position: center;
+}
+/* body style */
 .content-body{
     margin:auto;
     width: 650px;
     position: center;
     display:block;
 }
-header{
-    background-color: rgb(22, 45, 107);
-    padding: 20px;
-    margin-bottom: 20px;
-}
-.article-header-inner{
-    color: rgb(255, 255, 255);
-    text-align: left;
-    position: center;
-}
+
+
 /* sidebar decoration */
 .article-sidebar{
     position: fixed;
