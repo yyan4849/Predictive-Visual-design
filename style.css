@@ -1,0 +1,19 @@
+body {
+background: #f1efe9;
+}
+.content-nav{
+    margin: auto;
+    width: 650px;
+    position: relative;
+}
+.content-body{
+    margin: auto;
+    width: 650px;
+    position: center;
+}
+/* .article-sidebar{
+    position: absolute;
+    left: 5%;
+    background: #f1efe9;
+
+} */
