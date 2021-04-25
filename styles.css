@@ -68,6 +68,7 @@
 /* sidebar */
 
 .article-sidebar{
+    display:none;
     position: fixed;
     width: 200px;
     top:20%;
@@ -112,6 +113,7 @@ nav ul li span:hover{
     color: rgb(28, 100, 196);
     /* background:#f1efe9; */
     border-left-color: rgb(28, 100, 196);
+    padding-left:5px;
 }
 /* intro */
 .article-subtitle p{
