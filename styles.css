@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* background */
+/* .js-content{
+    /* background-color: rgb(241, 237, 237); */
+
+/* head */
+.content-nav{
+    position: relative;
+    top: 0;
+    /* width: 80%; */
+    margin: auto;
+    height: 450px;
+    background-color: rgb(115, 143, 79);
+}
+/* hero pic */
+.content-nav-hero{
+    position: absolute;
+    top:0;
+    height: 90%;
+    width: 60%;
+    background-color: rgb(158, 190, 180);
+}
+/* title */
+.article-header{
+    position:absolute;
+    left:60%;
+    height: 100%;
+    width: 40%;
+    background-color: bisque;
+}
+
+.article-header-inner{
+    position: absolute;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 40%;
+    height: 100%;
+    background-color: rgb(115, 143, 79);
+}
+
+.article-header-inner h3, h1{
+    color: aliceblue;
+}
+
+.article-header-inner h3{
+    line-height: 1.5em;
+}
+
+.article-header-inner h1{
+    line-height: 1;
+    font-size: 56px;
+}
+
+.content-body{
+    position: relative;
+    display:block;
+    margin: auto;
+    background-color: #fff;
+    width: 90%;
+    padding-bottom: 50px;
+}
+/* sidebar */
+
+.article-sidebar{
+    position: fixed;
+    width: 200px;
+    top:20%;
+    left:4%;
+    margin-top:20px;
+}
+
+span{
+    color:rgb(132, 137, 143);
+    font-size: 14px;
+    line-height: 0px;
+    border-left: 3px solid transparent;
+}
+
+.article-wayfinding__title{
+    padding-bottom: 20px;
+}
+
+nav ul{
+height: 100%;
+width: 100%;
+list-style:none;
+}
+
+
+nav ul li a{
+    color: rgb(132, 137, 143);
+    text-decoration: none;
+    display: block;
+    line-height: 1em;
+}
+/* nav ul li{
+    background-color: antiquewhite;
+} */
+.article-chapters-list-item{
+    line-height: 10px;
+    /* padding: 0;
+    margin:0;
+    background-color: aqua; */
+}
+nav ul li span:hover{
+    color: rgb(28, 100, 196);
+    /* background:#f1efe9; */
+    border-left-color: rgb(28, 100, 196);
+}
+/* intro */
+.article-subtitle p{
+    color:rgb(107, 103, 103);
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.article-subtitle{
+    /* background-color:antiquewhite; */
+    height: auto;
+    padding: 10px;
+}
+
+.article-main-content{
+    /* background-color: cadetblue; */
+    margin-top:20px;
+    border-left: 1px solid rgb(221, 220, 220);
+    position: absolute;
+    width:80%;
+    left:20%;
+}
+.basic-context section{
+    padding:30px;
+}
+
+.basic-context figure{
+    padding-top:20px;
+    width: auto;
+}
+.basic-context p {
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 40px;
+    /* background-color: antiquewhite; */
+    font-size: 18px;
+    line-height: 1.5em
+}
+
+
+
+
+
+

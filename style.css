@@ -15,22 +15,26 @@ body {
 }
 /* Header style */
 .content-nav{
-   margin: auto;
-   /* width: 650px; */
-   position: relative;
+  background-color: rgb(22, 45, 107);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 400px;
 
 }
 
 header{
-    background-color: rgb(22, 45, 107);
-    padding: 20px;
-    margin-bottom: 20px;
+    background-color: rgb(213, 217, 230);
+    margin:auto;
+    position:center;
+    padding-right:50px ;
 }
 
 .article-header-inner{
+    margin: auto;
+    float: right;
     color: rgb(255, 255, 255);
     text-align: left;
-    position: center;
 }
 /* body style */
 .content-body{
@@ -76,5 +80,3 @@ nav ul li span:hover{
     /* background:#f1efe9; */
     border-left-color: rgb(28, 100, 196);
 }
-
-
