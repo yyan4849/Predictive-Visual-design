@@ -1,4 +1,4 @@
-//sidebar appear in certain area
+// sidebar appear in certain area
 var sidebar = document.querySelector('.article-sidebar')
 var banner = document.querySelector('.content-nav')
 var bannerTop = banner.offsetTop+500
@@ -6,7 +6,7 @@ document.addEventListener('scroll', function(){
 // console.log(window.pageYOffset);
 if (window.pageYOffset >= bannerTop){
     sidebar.style.display = 'block';
-}else{
+}else {
     sidebar.style.display = 'none';
 }
 })
@@ -86,7 +86,7 @@ function make_newplot(csv_data){
         x: extension_x,
         y: extension_y,
         mode: 'lines',
-        name:'predictTace'
+        name:'predictTrace'
     }
 
     var data =[currentTrace, predictTrace];

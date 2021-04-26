@@ -1,3 +1,4 @@
+/* set the general style */
 *{
     margin:0;
     padding: 0;
@@ -14,6 +15,7 @@ html{
 
 /* head */
 .content-nav{
+    display: block;
     position: relative;
     top: 0;
     /* width: 80%; */
@@ -23,43 +25,40 @@ html{
 }
 /* hero pic */
 .content-nav-hero{
-    position: absolute;
+    position:relative;
     top:0;
-    height: 90%;
-    width: 60%;
-    background-color: rgb(221, 225, 230);
+    float: left;
+    background-color: antiquewhite;
+    height: 35rem;
+    width: 60rem;
 }
-/* title */
-.article-header{
-    position:absolute;
-    left:60%;
-    height: 100%;
-    width: 40%;
-    /* background-color: bisque; */
-}
-
-.article-header-inner{
+/* header */
+Header{
     position: absolute;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 40%;
-    height: 100%;
-    background-color: rgb(115, 143, 79);
+    left:62rem;
+    top: 50%;
+    /* display: block;
+    height: 400px; */
+    /* margin-top: 30%; */
+    color:#fff;
+    /* background-color:aqua; */
+    padding-right: 1.5rem;
 }
 
-.article-header-inner h3, h1{
+
+.article-header  h3, h1{
     color: aliceblue;
 }
 
-.article-header-inner h3{
-    line-height: 1.5em;
+.article-header h3{
+    line-height: 2em;
 }
 
-.article-header-inner h1{
-    line-height: 1;
-    font-size: 56px;
+.article-header h1{
+    line-height: 1em;
+    font-size: 4rem;
 }
-
+/* general main body styles */
 .content-body{
     position: relative;
     display:block;
@@ -71,7 +70,7 @@ html{
 /* sidebar */
 
 .article-sidebar{
-    display:none;
+    display: none;
     position: fixed;
     width: 200px;
     top:20%;
@@ -129,6 +128,7 @@ nav ul li span:hover{
     height: auto;
     padding: 10px;
 }
+/* main content */
 
 .article-main-content{
     /* background-color: cadetblue; */
@@ -149,13 +149,14 @@ nav ul li span:hover{
 .basic-context p {
     /* display: inline-block; */
     padding-top: 10px;
-    padding-right: 40px;
+    /* padding-right: 40px; */
     /* background-color: antiquewhite; */
     font-size: 18px;
     line-height: 1.5em
 }
 
-#myDiv{
+/* graphic styles */
+#myDi, #regression{
     /* position: absolute; */
     top: 0;
     z-index: 3;
@@ -163,12 +164,41 @@ nav ul li span:hover{
     /* background-color: aquamarine; */
 }
 
-#regression{
+/* #regression{
     top: 0;
     z-index: 3;
     /* width:500px;
-    border: #fff darkblue solid; */
-}
+    border: #fff darkblue solid;
+} */
+
+/* responsive layout */
+ @media screen and (max-width:1000px) {
+    
+    .article-sidebar{
+       display: none !important;
+    }
+    .article-main-content{
+        /* background-color: cadetblue; */
+        left:10px;
+        border-left:none ;
+    }
+
+    .content-nav{
+        height: 50rem;
+    }
+
+    Header{
+        position: absolute;
+        left:0;
+        top: 35rem;
+        /* display: block;
+        height: 400px; */
+        /* margin-top: 30%; */
+        margin: 2rem;
+    }
+} 
+
+
 
 
 
