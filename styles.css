@@ -30,7 +30,7 @@ html{
     position:relative;
     top:0;
     float: left;
-    background-color: antiquewhite;
+    background-color: rgb(231, 226, 220);
     height: 35rem;
     width: 60rem;
 }
@@ -54,7 +54,7 @@ Header{
 
 .article-header h3{
     line-height: 2em;
-    color:rgb(228, 161, 85);
+    /* color:rgb(228, 161, 85); */
     font-weight: 300;
 }
 
@@ -137,7 +137,9 @@ nav ul li span:hover{
     padding: 10px;
 }
 /* main content */
-
+.article-section h2{
+    font-size: 28px;
+}
 .article-main-content{
     /* background-color: cadetblue; */
     margin-top:20px;
@@ -179,8 +181,21 @@ nav ul li span:hover{
     border: #fff darkblue solid;
 } */
 
+/* reference style */
+.reference{
+    border-top: 1px solid rgb(221, 220, 220);
+}
+.reference h3{
+    color:rgb(129, 129, 129);
+    font-size: 20px;
+}
+.reference p{
+    font-size: 12px;
+    color:rgb(129, 129, 129);
+
+}
 /* responsive layout */
- @media screen and (max-width:1000px) {
+ @media screen and (max-width:1100px) {
     
     .article-sidebar{
        display: none !important;
@@ -192,7 +207,7 @@ nav ul li span:hover{
     }
 
     .content-nav{
-        height: 50rem;
+        height: 52rem;
     }
 
     Header{
