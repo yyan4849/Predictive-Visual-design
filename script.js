@@ -128,37 +128,83 @@ trace1 = {
 
 
 
-
+//health expenditure and mortality rate in denmark and turkey
 function make_plot(csv_data){
     //Filter our csv data for a particular country
     //Try logging country_data to the console to see what's in it
-    let china_data = csv_data.filter(d => d.country == "India");
-    let australia_data = csv_data.filter(d => d.country == "Australia");
+    let turkey_data = csv_data.filter(d => d.Country == "Turkey");
+    let denmark_data = csv_data.filter(d => d.Country == "Denmark");
 
     //Add our main data trace
+   
+
     let trace1 = {
-        x: china_data.map(d => d.year),
-        y: china_data.map(d => d.mortality),
+        x: denmark_data.map(d => d.Mortality),
+        y: denmark_data.map(d => d.Expenditure),
         mode: 'lines',
-        name:'china',
+        name:'From 1960-2015',
+        line: {
+            color: 'gray',
+            width: 2
+          }
     }
 
     let trace2 = {
-        x: australia_data.map(d => d.year),
-        y: australia_data.map(d => d.mortality),
+        x: turkey_data.map(d => d.Mortality),
+        y: turkey_data.map(d => d.Expenditure),
         mode: 'lines',
-        name:'Australia',
+        name:'Turkey',
+        line: {
+            color: 'rgb(40, 60, 190)',
+            width: 2
+          }
     }
+
+    let trace3 = {
+        x: denmark_data.map(d => d.Mortality),
+        y: denmark_data.map(d => d.Expenditure),
+        mode: 'lines',
+        name:'Denmark',
+        line: {
+            color: 'orange',
+            width: 2
+          }
+    }
+ 
+    // let trace3 = {
+    //     x: turkey_data.map(d=>d.Year),
+    //     y: turkey_data.map(d =>d.Expenditure/10),
+    //     size: turkey_data.map(d =>d.Expenditure),
+    //     mode: 'markers',
+    //     name:'Denmark health expenditure',
+    //     marker:{
+    //         color:'orange'
+
+    //     }
+        
+    // }
+    // let trace4 = {
+    //     x: denmark_data.map(d=>d.Year),
+    //     y: denmark_data.map(d =>d.Expenditure/10),
+    //     size: denmark_data.map(d =>d.Expenditure),
+    //     mode: 'markers',
+    //     name:'Denmark health expenditure',
+    //     marker:{
+    //         color:'blue'
+
+    //     }
+       
+    
     var layout = {
-        title: 'China & Australia mortality'
+        title: 'Turkey & Denmark <br> Child mortality vs Health expenditure'
     }
-    var data = [trace1, trace2];
+    var data = [trace1, trace2, trace3];
     //Draw the plot at our div
     Plotly.newPlot(myDiv3, data, layout, {responsive: true});
 }
 
 //Load the csv data and when loaded: run the make_plot function with that data
-Plotly.d3.csv("mortality.csv", make_plot);
+Plotly.d3.csv("/child-mortality-vs-health-expenditure-over-time.csv", make_plot);
 
 
 
