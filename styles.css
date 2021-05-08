@@ -30,14 +30,14 @@ html{
     position:relative;
     top:0;
     float: left;
-    background-color: rgb(231, 226, 220);
+    background-color: rgb(223, 230, 238);
     height: 35rem;
-    width: 60rem;
+    width: 50rem;
 }
 /* header */
 Header{
     position: absolute;
-    left:62rem;
+    left:55rem;
     top: 35%;
     /* display: block;
     height: 400px; */
@@ -207,7 +207,9 @@ nav ul li span:hover{
         left:10px;
         border-left:none ;
     }
-
+    .basic-context section{
+        padding-right:0px
+    }
     .content-nav{
         height: 58rem;
     }

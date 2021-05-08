@@ -11,13 +11,14 @@ if (window.pageYOffset >= bannerTop){
 }
 })
 
+
 // basic plot
 
 myDiv = document.getElementById('myDiv1');
 function make_plot(csv_data){
     //Filter our csv data for a particular country
     //Try logging country_data to the console to see what's in it
-    let china_data = csv_data.filter(d => d.country == "China");
+    let china_data = csv_data.filter(d => d.country == "India");
     let australia_data = csv_data.filter(d => d.country == "Australia");
 
     //Add our main data trace
@@ -45,9 +46,11 @@ function make_plot(csv_data){
 //Load the csv data and when loaded: run the make_plot function with that data
 Plotly.d3.csv("mortality.csv", make_plot);
 
-//regression plot
+
+
+//regression plot from tutorial 8
 function make_newplot(csv_data){
-    let country_data = csv_data.filter(d => d.country == "France");
+    let country_data = csv_data.filter(d => d.country == "Turkey");
 
     //To normalise our data, we need to know the minimum and maximum values
     //Math.min doesn't work with strings so we need to convert
@@ -61,12 +64,12 @@ function make_newplot(csv_data){
                                                  stretch(d.mortality, min_mortality, max_mortality, 0, 1)])
 
     //Here is where we train our regressor, experiment with the order value
-    let regression_result = regression.polynomial(regression_data, {order: 3});
+    let regression_result = regression.polynomial(regression_data, {order: 2});
 
     //Now we have a trained predictor, lets actually use it!
     let extension_x = [];
     let extension_y = [];
-    for(let year = 2017; year < 2030; year++){
+    for(let year = 2017; year <= 2025; year++){
         //We've still got to work in the normalised scale
         let prediction = regression_result.predict(stretch(year, 2000, 2017, 0, 1))[1]
 
@@ -92,7 +95,7 @@ function make_newplot(csv_data){
     var data =[currentTrace, predictTrace];
 
     var layout = {
-        title: 'France Regression'
+        title: 'Turkey Child Mortality Regression'
     }
 
     Plotly.newPlot('regression', data, layout, {responsive: true});
