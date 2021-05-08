@@ -13,7 +13,7 @@ if (window.pageYOffset >= bannerTop){
 
 // basic plot
 
-myDiv = document.getElementById('myDiv');
+myDiv = document.getElementById('myDiv1');
 function make_plot(csv_data){
     //Filter our csv data for a particular country
     //Try logging country_data to the console to see what's in it

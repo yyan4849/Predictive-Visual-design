@@ -23,7 +23,7 @@ html{
     /* width: 80%; */
     margin: auto;
     height: 40rem;
-    background-color: rgb(115, 143, 79);
+    background-color: rgb(223, 230, 238);
 }
 /* hero pic */
 .content-nav-hero{
@@ -38,7 +38,7 @@ html{
 Header{
     position: absolute;
     left:62rem;
-    top: 50%;
+    top: 35%;
     /* display: block;
     height: 400px; */
     /* margin-top: 30%; */
@@ -48,14 +48,14 @@ Header{
 }
 
 
-.article-header  h3, h1{
-    color: aliceblue;
+.article-header  h1{
+    color: rgb(33, 48, 61);
 }
 
 .article-header h3{
-    line-height: 2em;
-    /* color:rgb(228, 161, 85); */
-    font-weight: 300;
+    line-height: 2.5em;
+    color:rgb(228, 94, 5);
+    font-weight: 450;
 }
 
 .article-header h1{
@@ -162,7 +162,9 @@ nav ul li span:hover{
     /* padding-right: 40px; */
     /* background-color: antiquewhite; */
     font-size: 18px;
-    line-height: 1.5em
+    line-height: 1.5em;
+    color:rgb(108, 109, 110);
+    font-weight: 250px;
 }
 
 /* graphic styles */
@@ -207,7 +209,10 @@ nav ul li span:hover{
     }
 
     .content-nav{
-        height: 52rem;
+        height: 58rem;
+    }
+    .content-nav-hero{
+        width: 100%;
     }
 
     Header{
