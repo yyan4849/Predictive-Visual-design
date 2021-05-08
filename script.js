@@ -10,11 +10,125 @@ if (window.pageYOffset >= bannerTop){
     sidebar.style.display = 'none';
 }
 })
+// create var from html
+var myDiv1 = document.getElementById('myDiv1');
+var myDiv2 = document.getElementById('myDiv2');
+var myDiv3 = document.getElementById('myDiv3');
 
 
-// basic plot
+//map
+Plotly.d3.csv('/mortality.csv', function(err, rows){
+      function unpack(rows, key) {
+          return rows.map(function(row) { return row[key]; });
+      }
+    // console.log(unpack(rows, 'mortality'))
+    // unpack data and load data into array
+    var data = [{
+        type: 'choropleth',
+        locationmode: 'country names',
+        locations: unpack(rows, 'country'),
+        z: unpack(rows, 'mortality'),
+        text: unpack(rows, 'country'),
+    // color set
+        colorscale: [
+            [0,'rgb(5, 10, 172)'],[0.35,'rgb(40, 60, 190)'],
+            [0.5,'rgb(70, 100, 245)'], [0.6,'rgb(90, 120, 245)'],
+            [0.7,'rgb(106, 137, 247)'],[1,'rgb(220, 220, 220)']],
+            autocolorscale: false,
+            reversescale: true,
+            marker: {
+                line: {
+                    color: 'rgb(180,180,180)',
+                    width: 0.5
+                }
+            },
+            tick0: 0,
+            zmin: 0,
+            dtick: 1000,
+            colorbar: {
+                autotic: false,
+                tickprefix: '',
+                title: 'Mortality <br> per 1000'
+            }
+    }];
+    //layout set
+    var layout = {
+        title: 'Global child Mortality mean <br> from 1950 to 2017',
+        geo:{
+            showframe: false,
+            showcoastlines: false,
+            projection:{
+                type: 'fill'
+            }
+        }
+    };
 
-myDiv = document.getElementById('myDiv1');
+    Plotly.newPlot("myDiv1", data, layout, {responsive: true});
+
+});
+//main cause line chart
+// input the data
+trace1 = {
+    type: 'scatter',
+    x: [1991,  2015],
+    y: [2130000, 703917],
+    mode: 'lines',
+    name: 'Lower respiratory infection',
+  };
+  
+  trace2 = {
+    type: 'scatter',
+    x: [1991,  2015],
+    y: [1800000, 805700],
+    mode: 'lines',
+    name: 'Neonatal preterm birth complications',
+
+  };
+
+  trace3 = {
+    type: 'scatter',
+    x: [1991,  2015],
+    y: [1390000, 498888],
+    mode: 'lines',
+    name: 'Diarrheal diseases',
+  };
+
+  trace4= {
+    type: 'scatter',
+    x: [1991,  2015],
+    y:  [915323, 740424],
+    mode: 'lines',
+    name: 'Birth asphyxia and trauma',
+  };
+  trace5 = {
+    type: 'scatter',
+    x: [1991,  2015],
+    y: [729199, 62588],
+    mode: 'lines',
+    name: 'Malaria',
+  };
+//set the layout
+  var layout = {
+    title: 'Top causes for child mortality',
+    yaxis: {
+        title: 'Child died from',
+        showgrid: false,
+        zeroline: false
+      },
+      xaxis: {
+        title: 'Year',
+        showline: false
+      }
+    }
+  
+  var data = [trace1, trace2, trace3, trace4, trace5 ];
+  
+  Plotly.newPlot('myDiv2', data, layout, {responsive: true} );
+
+
+
+
+
 function make_plot(csv_data){
     //Filter our csv data for a particular country
     //Try logging country_data to the console to see what's in it
@@ -40,7 +154,7 @@ function make_plot(csv_data){
     }
     var data = [trace1, trace2];
     //Draw the plot at our div
-    Plotly.newPlot(myDiv, data, layout, {responsive: true});
+    Plotly.newPlot(myDiv3, data, layout, {responsive: true});
 }
 
 //Load the csv data and when loaded: run the make_plot function with that data

@@ -1,0 +1,222 @@
+country,mortality
+Afghanistan,181.665
+Albania,85.37714286
+Algeria,96.64428571
+American Samoa,34.84
+Andean Latin America,141.9685714
+Andorra,10.29285714
+Angola,225.1085714
+Antigua and Barbuda,41.07642857
+Argentina,47.04214286
+Armenia,89.39571429
+Australasia,16.74214286
+Australia,16.33571429
+Austria,26.01142857
+Azerbaijan,138.96
+Bahamas,51.43571429
+Bahrain,77.52642857
+Bangladesh,182.7307143
+Barbados,49.44285714
+Belarus,36.38571429
+Belgium,22.02214286
+Belize,80.63571429
+Benin,223.3035714
+Bermuda,24.92285714
+Bhutan,199.2228571
+Bolivia,173.3771429
+Bosnia and Herzegovina,68.35428571
+Botswana,82.44428571
+Brazil,128.7528571
+Brunei,53.77071429
+Bulgaria,39.08571429
+Burkina Faso,258.0642857
+Burundi,212.7207143
+Cambodia,157.0464286
+Cameroon,191.7592857
+Canada,19.37
+Cape Verde,102.9528571
+Caribbean,102.1064286
+Central African Republic,190.2171429
+Central Asia,95.07928571
+Central Europe,44.63285714
+Central Latin America,85.07428571
+Central Sub-Saharan Africa,193.5757143
+Chad,231.8871429
+Chile,70.41857143
+China,119.2321429
+Colombia,72.46857143
+Comoros,171.7978571
+Congo,152.4657143
+Costa Rica,53.01785714
+Cote d'Ivoire,205.7435714
+Croatia,43.59428571
+Cuba,30.00428571
+Cyprus,36.34071429
+Czech Republic,21.87357143
+Democratic Republic of Congo,188.21
+Denmark,15.93571429
+Djibouti,127.9607143
+Dominica,74.64928571
+Dominican Republic,105.0442857
+East Asia,116.9478571
+Eastern Europe,33.57
+Eastern Sub-Saharan Africa,197.2914286
+Ecuador,96.49142857
+Egypt,165.4664286
+El Salvador,112.7978571
+Equatorial Guinea,207.685
+Eritrea,195.0528571
+Estonia,24.66928571
+Ethiopia,221.7721429
+Fiji,50.02785714
+Finland,16.38428571
+France,18.70857143
+Gabon,137.2978571
+Gambia,158.6492857
+Georgia,84.805
+Germany,23.18571429
+Ghana,164.7664286
+Greece,24.86571429
+Greenland,57.08642857
+Grenada,54.54571429
+Guam,24.525
+Guatemala,130.6164286
+Guinea,250.6935714
+Guinea-Bissau,269.5
+Guyana,82.835
+Haiti,220.1864286
+High SDI,24.69857143
+High-income,25.22714286
+High-income North America,19.355
+High-middle SDI,75.605
+Honduras,104.3371429
+Hungary,35.00928571
+Iceland,13.40714286
+India,153.0435714
+Indonesia,142.4771429
+Iran,177.2292857
+Iraq,103.7121429
+Ireland,20.41571429
+Israel,21.55071429
+Italy,27.24357143
+Jamaica,55.72357143
+Japan,21.90928571
+Jordan,70.41928571
+Kazakhstan,63.84642857
+Kenya,129.485
+Kiribati,113.1428571
+Kuwait,41.72857143
+Kyrgyzstan,108.0328571
+Laos,237.0021429
+Latin America and the Caribbean,108.4464286
+Latvia,24.02642857
+Lebanon,52.72357143
+Lesotho,124.9585714
+Liberia,255.2407143
+Libya,111.3042857
+Lithuania,28.84214286
+Low SDI,200.195
+Low-middle SDI,166.3871429
+Luxembourg,20.90785714
+Macedonia,84.36
+Madagascar,160.6014286
+Malawi,261.6771429
+Malaysia,51.515
+Maldives,157.1742857
+Mali,284.5635714
+Malta,28.47357143
+Marshall Islands,66.03
+Mauritania,152.2614286
+Mauritius,56.31714286
+Mexico,86.89
+Micronesia,76.00071429
+Middle SDI,130.59
+Moldova,71.845
+Mongolia,141.5864286
+Montenegro,32.85857143
+Morocco,146.0421429
+Mozambique,227.7114286
+Myanmar,212.2457143
+Namibia,91.44285714
+Nepal,183.8028571
+Netherlands,14.43928571
+New Zealand,18.42285714
+Nicaragua,136.2664286
+Niger,293.5535714
+Nigeria,235.805
+North Africa and Middle East,150.6671429
+North Korea,73.20714286
+Northern Mariana Islands,15.48785714
+Norway,14.06071429
+Oceania,106.0835714
+Oman,176.5742857
+Pakistan,150.93
+Palestine,76.44642857
+Panama,52.48214286
+Paraguay,63.71857143
+Peru,148.2135714
+Philippines,90.22785714
+Poland,39.24428571
+Portugal,50.88571429
+Puerto Rico,35.01071429
+Qatar,49.56
+Romania,48.81571429
+Russia,32.31
+Rwanda,202.9771429
+Saint Lucia,69.76
+Saint Vincent and the Grenadines,75.10357143
+Samoa,46.15142857
+Sao Tome and Principe,143.6871429
+Senegal,198.2807143
+Serbia,62.99
+Seychelles,52.10357143
+Sierra Leone,268.8821429
+Singapore,28.17285714
+Slovakia,32.00142857
+Slovenia,34.28857143
+Solomon Islands,99.42571429
+Somalia,206.2857143
+South Africa,108.6142857
+South Asia,157.1092857
+South Korea,46.62642857
+Southeast Asia,124.195
+Southern Latin America,54.09
+Southern Sub-Saharan Africa,107.2221429
+Spain,28.87571429
+Sri Lanka,57.26071429
+Sub-Saharan Africa,203.9792857
+Sudan,168.9335714
+Suriname,69.87928571
+Swaziland,143.3778571
+Sweden,11.63857143
+Switzerland,16.37071429
+Syria,78.58571429
+Taiwan,28.62214286
+Tajikistan,143.8735714
+Tanzania,178.1985714
+Thailand,77.87285714
+Timor,187.1292857
+Togo,198.5685714
+Tonga,40.035
+Trinidad and Tobago,47.88285714
+Tropical Latin America,127.1364286
+Tunisia,123.9728571
+Turkey,149.3364286
+Turkmenistan,103.1571429
+Uganda,188.8707143
+Ukraine,33.98071429
+United Arab Emirates,80.58428571
+United Kingdom,17.05142857
+United States,19.33142857
+United States Virgin Islands,31.77785714
+Uruguay,41.52571429
+Uzbekistan,79.63285714
+Vanuatu,70.23357143
+Venezuela,53.98142857
+Vietnam,86.81142857
+Western Europe,22.85071429
+Western Sub-Saharan Africa,230.7135714
+World,129.3464286
+Yemen,222.5842857
+Zambia,175.5314286
+Zimbabwe,101.0564286
