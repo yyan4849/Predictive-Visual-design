@@ -4,17 +4,19 @@ var banner = document.querySelector('.content-nav')
 var bannerTop = banner.offsetTop+500
 document.addEventListener('scroll', function(){
 // console.log(window.pageYOffset);
+//decide whether the page scroll down bigger than bannerTop
 if (window.pageYOffset >= bannerTop){
     sidebar.style.display = 'block';
 }else {
     sidebar.style.display = 'none';
 }
 })
+
+
 // create var from html
 var myDiv1 = document.getElementById('myDiv1');
 var myDiv2 = document.getElementById('myDiv2');
 var myDiv3 = document.getElementById('myDiv3');
-
 
 //map
 Plotly.d3.csv('/mortality.csv', function(err, rows){
@@ -42,6 +44,7 @@ Plotly.d3.csv('/mortality.csv', function(err, rows){
                     width: 0.5
                 }
             },
+    //info set
             tick0: 0,
             zmin: 0,
             dtick: 1000,
@@ -66,6 +69,7 @@ Plotly.d3.csv('/mortality.csv', function(err, rows){
     Plotly.newPlot("myDiv1", data, layout, {responsive: true});
 
 });
+
 //main cause line chart
 // input the data
 trace1 = {
@@ -81,7 +85,7 @@ trace1 = {
     x: [1991,  2015],
     y: [1800000, 805700],
     mode: 'lines',
-    name: 'Neonatal preterm birth complications',
+    name: 'Neonatal preterm <br>birth complications',
 
   };
 
@@ -98,7 +102,7 @@ trace1 = {
     x: [1991,  2015],
     y:  [915323, 740424],
     mode: 'lines',
-    name: 'Birth asphyxia and trauma',
+    name: 'Birth asphyxia <br>and trauma',
   };
   trace5 = {
     type: 'scatter',
@@ -137,10 +141,10 @@ function make_plot(csv_data){
 
     //Add our main data trace
    
-
+    // legend represent line as the year serious
     let trace1 = {
-        x: denmark_data.map(d => d.Mortality),
-        y: denmark_data.map(d => d.Expenditure),
+        y: denmark_data.map(d => d.Mortality),
+        x: denmark_data.map(d => d.Expenditure),
         mode: 'lines',
         name:'From 1960-2015',
         line: {
@@ -150,8 +154,8 @@ function make_plot(csv_data){
     }
 
     let trace2 = {
-        x: turkey_data.map(d => d.Mortality),
-        y: turkey_data.map(d => d.Expenditure),
+        y: turkey_data.map(d => d.Mortality),
+        x: turkey_data.map(d => d.Expenditure),
         mode: 'lines',
         name:'Turkey',
         line: {
@@ -161,8 +165,8 @@ function make_plot(csv_data){
     }
 
     let trace3 = {
-        x: denmark_data.map(d => d.Mortality),
-        y: denmark_data.map(d => d.Expenditure),
+        y: denmark_data.map(d => d.Mortality),
+        x: denmark_data.map(d => d.Expenditure),
         mode: 'lines',
         name:'Denmark',
         line: {
@@ -170,33 +174,19 @@ function make_plot(csv_data){
             width: 2
           }
     }
- 
-    // let trace3 = {
-    //     x: turkey_data.map(d=>d.Year),
-    //     y: turkey_data.map(d =>d.Expenditure/10),
-    //     size: turkey_data.map(d =>d.Expenditure),
-    //     mode: 'markers',
-    //     name:'Denmark health expenditure',
-    //     marker:{
-    //         color:'orange'
 
-    //     }
-        
-    // }
-    // let trace4 = {
-    //     x: denmark_data.map(d=>d.Year),
-    //     y: denmark_data.map(d =>d.Expenditure/10),
-    //     size: denmark_data.map(d =>d.Expenditure),
-    //     mode: 'markers',
-    //     name:'Denmark health expenditure',
-    //     marker:{
-    //         color:'blue'
-
-    //     }
-       
-    
+    //set title and xy axis info
     var layout = {
-        title: 'Turkey & Denmark <br> Child mortality vs Health expenditure'
+        title: 'Turkey & Denmark <br> Child mortality vs Health expenditure',
+        xaxis: {
+            title: 'Health Expenditure and Financing (per capita)',
+            showgrid: false,
+            zeroline: false
+          },
+          yaxis: {
+            title: 'Mortality rate,(per 1,000 live births)',
+            showline: false
+          }
     }
     var data = [trace1, trace2, trace3];
     //Draw the plot at our div
@@ -242,14 +232,14 @@ function make_newplot(csv_data){
         x: country_data.map(d => d.year),
         y: country_data.map(d => d.mortality),
         mode: 'lines',
-        name:"currentTrace"
+        name:"CurrentTrace"
     }
     //adding our extension as a second trace
     let predictTrace = {
         x: extension_x,
         y: extension_y,
         mode: 'lines',
-        name:'predictTrace'
+        name:'PredictTrace'
     }
 
     var data =[currentTrace, predictTrace];

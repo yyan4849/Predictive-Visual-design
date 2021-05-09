@@ -12,9 +12,6 @@ html{
 
 }
 
-/* background */
-/* .js-content{
-    /* background-color: rgb(241, 237, 237); */
 
 /* head */
 .content-nav{
@@ -24,14 +21,14 @@ html{
     /* width: 80%; */
     margin: auto;
     height: 40rem;
-    background-color: rgb(223, 230, 238);
+    background-color: rgb(209, 226, 236);
 }
 /* hero pic */
 .content-nav-hero{
     position:relative;
     top:0;
     float: left;
-    background-color: rgb(223, 230, 238);
+    background-color: rgb(209, 226, 236);
     height: 35rem;
     width: 50rem;
 }
@@ -40,19 +37,10 @@ Header{
     position: absolute;
     left:55rem;
     top: 35%;
-    /* display: block;
-    height: 400px; */
-    /* margin-top: 30%; */
     color:#fff;
-    /* background-color:aqua; */
     padding-right: 1.5rem;
 }
 
-.article-wayfinding__title{
-    margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 1.5em;
-}
 .article-header  h1{
     color: rgb(33, 48, 61);
 }
@@ -60,7 +48,7 @@ Header{
 .article-header h3{
     line-height: 2.5em;
     color:rgb(228, 94, 5);
-    font-weight: 450;
+    font-weight: 500;
 }
 
 .article-header h1{
@@ -79,6 +67,12 @@ Header{
 }
 /* sidebar */
 
+.article-wayfinding__title{
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
 .article-sidebar{
     display: none;
     position: fixed;
@@ -95,9 +89,6 @@ span{
     border-left: 3px solid transparent;
 }
 
-.article-wayfinding-title{
-    padding-bottom: 20px;
-}
 
 nav ul{
 height: 100%;
@@ -112,9 +103,6 @@ nav ul li a{
     display: block;
     line-height: 1em;
 }
-/* nav ul li{
-    background-color: antiquewhite;
-} */
 .article-chapters-list-item{
     line-height: 10px;
     /* padding: 0;
@@ -162,10 +150,7 @@ nav ul li span:hover{
     width: auto;
 }
 .basic-context p {
-    /* display: inline-block; */
     padding-top: 10px;
-    /* padding-right: 40px; */
-    /* background-color: antiquewhite; */
     font-size: 18px;
     line-height: 1.5em;
     color:rgb(108, 109, 110);
@@ -174,19 +159,10 @@ nav ul li span:hover{
 
 /* graphic styles */
 #myDi, #regression{
-    /* position: absolute; */
     top: 0;
     z-index: 3;
     width:auto;
-    /* background-color: aquamarine; */
 }
-
-/* #regression{
-    top: 0;
-    z-index: 3;
-    /* width:500px;
-    border: #fff darkblue solid;
-} */
 
 /* reference style */
 .reference{
@@ -226,9 +202,6 @@ nav ul li span:hover{
         position: absolute;
         left:0;
         top: 35rem;
-        /* display: block;
-        height: 400px; */
-        /* margin-top: 30%; */
         margin: 2rem;
     }
 } 
